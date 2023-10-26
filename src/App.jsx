@@ -1,11 +1,15 @@
+import Navbar from "./components/Navbar"
 
 
 function App() {
 
   return (
-    <h1 className='text-3xl font-sans font-bold underline'>
-      Hello World! 
-    </h1>
+    <main className="">
+      <Navbar />
+      <section>
+        Hero
+      </section>
+    </main>
   )
 }
 
