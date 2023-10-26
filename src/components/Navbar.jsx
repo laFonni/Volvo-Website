@@ -2,15 +2,21 @@ import { VolvoSpreadWord } from "../assets";
 import { navCards } from "../constants";
 import ButtonText from "./ButtonText";
 import { useState } from "react";
+import OurCarsCard from "./navCards/OurCarsCard";
+
+const routes = {
+  "Nasze samochody": <OurCarsCard />,
+};
 
 const Navbar = () => {
   const [activeCard, setActiveCard] = useState(null);
 
-  const toggleCard = (cardIndex) => {
-    if (activeCard === cardIndex) {
+  const toggleCard = (label) => {
+    console.log(label);
+    if (activeCard === label) {
       setActiveCard(null);
     } else {
-      setActiveCard(cardIndex);
+      setActiveCard(label);
     }
   };
 
@@ -26,17 +32,18 @@ const Navbar = () => {
             className="cursor-pointer ml-1"
           />
         </a>
-        <ul className="flex flex-1 flex-row w-full justify-center h-6 items-center">
-          {navCards.map((card, index) => (
+        <ul className="flex flex-1 flex-row w-full justify-center h-10 items-center">
+          {navCards.map((card) => (
             <li
-              className="cursor-pointer mr-8 font-semibold leading-3 tracking-wider text-gray-600"
-              key={card.index}
-              onClick={() => toggleCard(index)}
+              className="mr-8"
+              key={card.label}
+              onClick={() => toggleCard(card.label)}
             >
-              {ButtonText(card.label, <card.card />, activeCard === index)}
+              {ButtonText(card.label)}
             </li>
           ))}
         </ul>
+        {routes[activeCard]}
       </nav>
     </header>
   );

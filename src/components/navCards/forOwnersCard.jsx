@@ -1,7 +1,9 @@
 const forOwnersCard = () => {
   return (
-    <div>forOwnersCard</div>
-  )
-}
+    <div className="absolute top-[64px] left-0 w-full h-screen bg-red-500">
+      forOwnersCard
+    </div>
+  );
+};
 
-export default forOwnersCard
+export default forOwnersCard;
