@@ -1,16 +1,8 @@
-import { useState } from "react";
-
 const ButtonText = (label, cardContent, isCardOpen) => {
-  const [onClicked, setOnClicked] = useState(false);
-
-  const toggleCard = () => {
-    setOnClicked((prev) => !prev);
-  };
-
   return (
-    <button onClick={toggleCard}>
+    <button>
       {label}
-      {onClicked && (isCardOpen ? cardContent : null)}
+      {isCardOpen && cardContent}
     </button>
   );
 };

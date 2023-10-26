@@ -8,10 +8,8 @@ const Navbar = () => {
 
   const toggleCard = (cardIndex) => {
     if (activeCard === cardIndex) {
-      // Jeśli kliknięto na otwartą kartę, zamknij ją
       setActiveCard(null);
     } else {
-      // Jeśli kliknięto na inną kartę, otwórz ją
       setActiveCard(cardIndex);
     }
   };
@@ -28,16 +26,14 @@ const Navbar = () => {
             className="cursor-pointer ml-1"
           />
         </a>
-        {/* Fix - after clicking on 1st, 2sd, 1st card will not open again */}
         <ul className="flex flex-1 flex-row w-full justify-center h-6 items-center">
-          {navCards.map((card) => (
-            
+          {navCards.map((card, index) => (
             <li
               className="cursor-pointer mr-8 font-semibold leading-3 tracking-wider text-gray-600"
-              key={card.label}
-              onClick={() => toggleCard(card.label)}
+              key={card.index}
+              onClick={() => toggleCard(index)}
             >
-              {ButtonText(card.label, <card.card />, activeCard === card.label)}
+              {ButtonText(card.label, <card.card />, activeCard === index)}
             </li>
           ))}
         </ul>
