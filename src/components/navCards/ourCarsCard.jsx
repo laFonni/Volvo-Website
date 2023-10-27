@@ -19,7 +19,6 @@ const ourCarsCard = () => {
           </div>
           {/* Grid of cars */}
           {/* <ElectricCarsGrid /> */}
-
           <HybridCarsGrid />
         </div>
       </div>
