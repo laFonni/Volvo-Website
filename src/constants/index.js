@@ -5,30 +5,30 @@ import aboutUsCard from "../components/navCards/AboutUsCard";
 import { C40_Recharge, XC40_Recharge, EX30, EX90 } from "../assets/Cars";
 
 export const navCards = [
-  { index: 1, label: "Nasze samochody", card: ourCarsCard },
-  { index: 2, label: "Zakup", card: purchaseCard },
-  { index: 3, label: "Dla właścicieli", card: forOwnersCard },
-  { index: 4, label: "O nas", card: aboutUsCard },
+  { key: "ourCars", label: "Nasze samochody", card: ourCarsCard },
+  { key: "purchase", label: "Zakup", card: purchaseCard },
+  { key: "forOwners", label: "Dla właścicieli", card: forOwnersCard },
+  { key: "aboutUs", label: "O nas", card: aboutUsCard },
 ];
 
 export const carsCards = [
   {
-    index: 1,
+    key: "electric",
     label: "Elektryczne",
     text: "Całkowicie elektryczne",
     card: "ElectricCarsCard",
   },
   {
-    index: 2,
+    key: "hybrid",
     label: "Hybrydy",
     text: "Samochód hybrydowy plug-in",
     card: "HybridCarsCard",
   },
   {
-    index: 3,
+    key: "mildHybrid",
     label: "Mild-Hybrid",
     text: "Samochód typu Mild-Hybrid",
-    card: "TraditionalCarsCard",
+    card: "MildHybridCarsCard",
   },
 ];
 
@@ -36,25 +36,25 @@ export const electricCars = [
   {
     class: "Crossover",
     model: "C40 Recharge",
-    price: "od 256 900 zł",
+    price: "256 900",
     image: C40_Recharge,
   },
   {
     class: "SUV",
     model: "XC40 Recharge",
-    price: "od 249 300 zł",
+    price: "249 300",
     image: XC40_Recharge,
   },
   {
     class: "SUV",
     model: "EX30",
-    price: "od 169 900 zł",
+    price: "169 900",
     image: EX30,
   },
   {
     class: "SUV",
     model: "EX90",
-    price: "od 399 900 zł",
+    price: "399 900",
     image: EX90,
   },
 ];
@@ -63,37 +63,94 @@ export const hybridCars = [
   {
     class: "SUV",
     model: "XC90",
-    price: "od 379 900 zł",
+    price: "379 900",
     image: EX90,
   },
   {
     class: "SUV",
     model: "XC60",
-    price: "od 264 900 zł",
+    price: "264 900",
     image: EX90,
   },
   {
     class: "Sedan",
     model: "S90 Recharge",
-    price: "od 323 900 zł",
+    price: "323 900",
     image: EX90,
   },
   {
     class: "Sedan",
     model: "S60 Recharge",
-    price: "od 349 900 zł",
+    price: "349 900",
     image: EX90,
   },
   {
     class: "Kombi",
     model: "V90",
-    price: "od 299 900 zł",
+    price: "299 900",
     image: EX90,
   },
   {
     class: "Kombi",
     model: "V60",
-    price: "od 244 900 zł",
+    price: "244 900",
+    image: EX90,
+  },
+];
+
+export const mildHybridCars = [
+  {
+    class: "SUV",
+    model: "XC90",
+    price: "334 900",
+    image: EX90,
+  },
+  {
+    class: "SUV",
+    model: "XC60",
+    price: "219 900",
+    image: EX90,
+  },
+  {
+    class: "SUV",
+    model: "XC40",
+    price: "164 900",
+    image: EX90,
+  },
+  {
+    class: "Sedan",
+    model: "S90",
+    price: "270 900",
+    image: EX90,
+  },
+  {
+    class: "Sedan",
+    model: "S60",
+    price: "247 900",
+    image: EX90,
+  },
+  {
+    class: "Kombi",
+    model: "V90",
+    price: "259 900",
+    image: EX90,
+  },
+  {
+    class: "Kombi",
+    model: "V60",
+    price: "169 900",
+    image: EX90,
+  },
+  {
+    class: "Kombi",
+    model: "V90 Cross Country",
+    price: "314 600",
+    image: EX90,
+  },
+  {
+    class: "Kombi",
+    model: "V60 Cross Country",
+    price: "238 900",
     image: EX90,
   },
 ];

@@ -8,22 +8,22 @@ import ForOwnersCard from "./navCards/ForOwnersCard";
 import AboutUsCard from "./navCards/AboutUsCard";
 
 const routes = {
-  "Nasze samochody": <OurCarsCard />,
-  Zakup: <PurchaseCard />,
-  "Dla właścicieli": <ForOwnersCard />,
-  "O nas": <AboutUsCard />,
+  ourCars: <OurCarsCard />,
+  purchase: <PurchaseCard />,
+  forOwners: <ForOwnersCard />,
+  aboutUS: <AboutUsCard />,
 };
 
 const Navbar = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   // logic for toggling cards
-  const toggleCard = (label) => {
-    console.log(label, activeCard);
-    if (activeCard === label) {
+  const toggleCard = (key) => {
+    console.log(key, activeCard);
+    if (activeCard === key) {
       setActiveCard(null);
     } else {
-      setActiveCard(label);
+      setActiveCard(key);
     }
   };
 
@@ -44,8 +44,8 @@ const Navbar = () => {
           {navCards.map((card) => (
             <li
               className="mr-8"
-              key={card.label}
-              onClick={() => toggleCard(card.label)}
+              key={card.key}
+              onClick={() => toggleCard(card.key)}
             >
               {ButtonText(card.label, activeCard === card.label)}
             </li>
