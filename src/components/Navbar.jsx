@@ -2,20 +2,33 @@ import { VolvoSpreadWord } from "../assets";
 import { navCards } from "../constants";
 import ButtonText from "./ButtonText";
 import { useState } from "react";
+import OurCarsCard from "./navCards/OurCarsCard";
+import PurchaseCard from "./navCards/PurchaseCard";
+import ForOwnersCard from "./navCards/ForOwnersCard";
+import AboutUsCard from "./navCards/AboutUsCard";
+
+const routes = {
+  ourCars: <OurCarsCard />,
+  purchase: <PurchaseCard />,
+  forOwners: <ForOwnersCard />,
+  aboutUS: <AboutUsCard />,
+};
 
 const Navbar = () => {
   const [activeCard, setActiveCard] = useState(null);
 
-  const toggleCard = (cardIndex) => {
-    if (activeCard === cardIndex) {
+  // logic for toggling cards
+  const toggleCard = (key) => {
+    console.log(key, activeCard);
+    if (activeCard === key) {
       setActiveCard(null);
     } else {
-      setActiveCard(cardIndex);
+      setActiveCard(key);
     }
   };
 
   return (
-    <header className="px-2 bg-white w-full h-[64px] relative">
+    <header className="px-2 bg-gray-50 w-full h-[64px] relative">
       <nav className="flex h-[64px] items-center">
         <a href="/" className="absolute ">
           <img
@@ -26,17 +39,19 @@ const Navbar = () => {
             className="cursor-pointer ml-1"
           />
         </a>
-        <ul className="flex flex-1 flex-row w-full justify-center h-6 items-center">
-          {navCards.map((card, index) => (
+
+        <ul className="flex flex-1 flex-row w-full justify-center h-10 items-center">
+          {navCards.map((card) => (
             <li
-              className="cursor-pointer mr-8 font-semibold leading-3 tracking-wider text-gray-600"
-              key={card.index}
-              onClick={() => toggleCard(index)}
+              className="mr-8"
+              key={card.key}
+              onClick={() => toggleCard(card.key)}
             >
-              {ButtonText(card.label, <card.card />, activeCard === index)}
+              {ButtonText(card.label, activeCard === card.label)}
             </li>
           ))}
         </ul>
+        {routes[activeCard]}
       </nav>
     </header>
   );
