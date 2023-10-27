@@ -1,5 +1,4 @@
 import { carsCards } from "../../constants";
-import { ElectricCarsGrid } from "./ElectricCarsGrid";
 import { HybridCarsGrid } from "./HybridCarsGrid";
 
 const ourCarsCard = () => {
