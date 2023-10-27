@@ -39,6 +39,7 @@ const Navbar = () => {
             className="cursor-pointer ml-1"
           />
         </a>
+
         <ul className="flex flex-1 flex-row w-full justify-center h-10 items-center">
           {navCards.map((card) => (
             <li
