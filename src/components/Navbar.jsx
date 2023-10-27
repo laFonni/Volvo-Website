@@ -3,16 +3,23 @@ import { navCards } from "../constants";
 import ButtonText from "./ButtonText";
 import { useState } from "react";
 import OurCarsCard from "./navCards/OurCarsCard";
+import PurchaseCard from "./navCards/PurchaseCard";
+import ForOwnersCard from "./navCards/ForOwnersCard";
+import AboutUsCard from "./navCards/AboutUsCard";
 
 const routes = {
   "Nasze samochody": <OurCarsCard />,
+  Zakup: <PurchaseCard />,
+  "Dla właścicieli": <ForOwnersCard />,
+  "O nas": <AboutUsCard />,
 };
 
 const Navbar = () => {
   const [activeCard, setActiveCard] = useState(null);
 
+  // logic for toggling cards
   const toggleCard = (label) => {
-    console.log(label);
+    console.log(label, activeCard);
     if (activeCard === label) {
       setActiveCard(null);
     } else {
@@ -21,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="px-2 bg-white w-full h-[64px] relative">
+    <header className="px-2 bg-gray-50 w-full h-[64px] relative">
       <nav className="flex h-[64px] items-center">
         <a href="/" className="absolute ">
           <img
@@ -39,7 +46,7 @@ const Navbar = () => {
               key={card.label}
               onClick={() => toggleCard(card.label)}
             >
-              {ButtonText(card.label)}
+              {ButtonText(card.label, activeCard === card.label)}
             </li>
           ))}
         </ul>
