@@ -5,7 +5,7 @@ const CarsGrid = ({ cars, type }) => {
   return (
     <>
       <div className="text-lg font-semibold mt-4 mb-4">{type} &#62;</div>
-      <div className="grid grid-cols-3 max-gap-5">
+      <div className="grid grid-cols-4 gap-10 ">
         {cars.map(
           (car) =>
             car.class === type && (

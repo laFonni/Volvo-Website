@@ -11,7 +11,7 @@ const routes = {
   ourCars: <OurCarsCard />,
   purchase: <PurchaseCard />,
   forOwners: <ForOwnersCard />,
-  aboutUS: <AboutUsCard />,
+  aboutUs: <AboutUsCard />,
 };
 
 const Navbar = () => {

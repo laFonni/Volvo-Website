@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(170px, 170px));
+}

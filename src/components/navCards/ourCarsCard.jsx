@@ -23,7 +23,7 @@ const OurCarsCard = () => {
   return (
     <div className="fixed top-[64px] left-0 w-full h-[80vh] bg-white">
       <div className="mt-6 mr-3 h-screen">
-        <div className=" mr-6 ml-16  h-screen flex flex-row justify-center">
+        <div className=" mr-6  h-[80vh] flex flex-row justify-center">
           {/* List of types */}
           <ul className=" mr-2 ml-2  w-[250px] ">
             {carsCards.map((type) => (
