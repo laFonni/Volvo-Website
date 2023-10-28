@@ -19,7 +19,6 @@ const Navbar = () => {
 
   // logic for toggling cards
   const toggleCard = (key) => {
-    console.log(key, activeCard);
     if (activeCard === key) {
       setActiveCard(null);
     } else {
@@ -47,7 +46,7 @@ const Navbar = () => {
               key={card.key}
               onClick={() => toggleCard(card.key)}
             >
-              {ButtonText(card.label, activeCard === card.label)}
+              {ButtonText(card.label, activeCard === card.key)}
             </li>
           ))}
         </ul>

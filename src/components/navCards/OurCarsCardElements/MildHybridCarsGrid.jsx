@@ -1,4 +1,4 @@
-import { mildHybridCars } from "../../constants";
+import { mildHybridCars } from "../../../constants";
 import CarsGrid from "./CarsGrid";
 
 const MildHybridCarsCard = () => {
@@ -11,7 +11,6 @@ const MildHybridCarsCard = () => {
         <CarsGrid cars={mildHybridCars} type="Sedan" />
         {/* Kombi */}
         <CarsGrid cars={mildHybridCars} type="Kombi" />
-        
       </div>
     </div>
   );
