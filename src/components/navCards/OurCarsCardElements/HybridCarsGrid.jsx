@@ -1,4 +1,4 @@
-import { hybridCars } from "../../constants";
+import { hybridCars } from "../../../constants";
 import CarsGrid from "./CarsGrid";
 
 export const HybridCarsGrid = () => {

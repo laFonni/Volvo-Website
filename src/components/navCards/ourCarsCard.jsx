@@ -1,7 +1,7 @@
 import { carsCards } from "../../constants";
-import { HybridCarsGrid } from "./HybridCarsGrid";
-import { ElectricCarsGrid } from "./ElectricCarsGrid";
-import MildHybridCarsGrid from "./MildHybridCarsGrid";
+import { HybridCarsGrid } from "./OurCarsCardElements/HybridCarsGrid";
+import { ElectricCarsGrid } from "./OurCarsCardElements/ElectricCarsGrid";
+import MildHybridCarsGrid from "./OurCarsCardElements/MildHybridCarsGrid";
 
 import { useState } from "react";
 
@@ -9,7 +9,6 @@ const OurCarsCard = () => {
   const [activeGrid, setActiveGrid] = useState("electric");
 
   const toggleGrid = (card) => {
-    console.log("activeGrid: ", activeGrid, "card: ", card);
     if (activeGrid !== card) {
       setActiveGrid(card);
     }

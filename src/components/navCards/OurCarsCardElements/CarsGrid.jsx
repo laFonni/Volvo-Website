@@ -1,4 +1,4 @@
-import { CarBox } from "./carBox";
+import { CarBox } from "./CarBox";
 import PropTypes from "prop-types";
 
 const CarsGrid = ({ cars, type }) => {
@@ -7,13 +7,13 @@ const CarsGrid = ({ cars, type }) => {
       <div className="text-lg font-semibold mt-4 mb-4">{type} &#62;</div>
       <div className="grid grid-cols-4 gap-10 ">
         {cars.map(
-          (car) =>
-            car.class === type && (
+          (cars) =>
+            cars.class === type && (
               <CarBox
-                model={car.model}
-                price={"Już od " + car.price + " zł"}
-                image={car.image}
-                key={car.label}
+                model={cars.model}
+                price={"Już od " + cars.price + " zł"}
+                image={cars.image}
+                key={cars.model}
               />
             )
         )}
@@ -23,7 +23,7 @@ const CarsGrid = ({ cars, type }) => {
 };
 
 CarsGrid.propTypes = {
-  cars: PropTypes.string.isRequired,
+  cars: PropTypes.array.isRequired,
   type: PropTypes.string.isRequired,
 };
 

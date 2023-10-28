@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar"
 function App() {
 
   return (
-    <main className="">
+    <main className="cursor-default select-none">
       <Navbar />
       <section className="bg-gray-50">
         Hero
