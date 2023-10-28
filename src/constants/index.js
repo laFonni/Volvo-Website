@@ -189,4 +189,43 @@ export const purchaseCard = [
   { key: "others1", head: "Inne", label: "Jazda próbna" },
   { key: "others2", head: "Inne", label: "Znajdź dealera" },
   { key: "others3", head: "Inne", label: "Zapisz się do newslettera" },
+
 ];
+
+export const forOwnersCard = [
+  { key: "service1", head: "Serwis", label: "O autoryzowanym serwise Volvo" },
+  { key: "service2", head: "Serwis", label: "Oferty serwisowe" },
+  { key: "service3", head: "Serwis", label: "Pick-up and delivery" },
+  { key: "service4", head: "Serwis", label: "Znajdź dealera" },
+
+  { key: "accesories1", head: "Akcesoria", label: "Akcesoria" },
+  { key: "accesories2", head: "Akcesoria", label: "Produkt kwartału" },
+
+  { key: "helpAndExploitation1", head: "Pomoc i eksploatacja", label: "Zgłoś szkodę" },
+  { key: "helpAndExploitation2", head: "Pomoc i eksploatacja", label: "Assistance" },
+  { key: "helpAndExploitation3", head: "Pomoc i eksploatacja", label: "Wsparcie i instrukcje" },
+  { key: "helpAndExploitation4", head: "Pomoc i eksploatacja", label: "Volvo Exchange System" },
+
+  { key: "volvoOnLine1", head: "Volovo on-line", label: "Volvo Car App" },
+  { key: "volvoOnLine2", head: "Volovo on-line", label: "Volvo ID" },
+];
+
+export const aboutUsCard = [
+  { key: "elecrtification1", head: "Elektryfikacja", label: "Samochody elektryczne" },
+  { key: "elecrtification2", head: "Elektryfikacja", label: "Samochody typu plug-in" },
+  { key: "elecrtification3", head: "Elektryfikacja", label: "Ładowanie" },
+  { key: "elecrtification4", head: "Elektryfikacja", label: "Stacje ładowania Volvo" },
+
+  { key: "aboutVolvo1", head: "O Volvo Cars", label: "Nasza historia" },
+  { key: "aboutVolvo2", head: "O Volvo Cars", label: "Bezpieczeństwo" },
+  { key: "aboutVolvo3", head: "O Volvo Cars", label: "Zrównoważony rozwój" },
+  { key: "aboutVolvo4", head: "O Volvo Cars", label: "Aktualności" },
+  { key: "aboutVolvo5", head: "O Volvo Cars", label: "Ochrona marki" },
+  { key: "aboutVolvo6", head: "O Volvo Cars", label: "Samochody Rodzinne" },
+
+  { key: "volvocloserToYou1", head: "Volvo bliżej Ciebie", label: "Tech Hub" },
+  { key: "volvocloserToYou2", head: "Volvo bliżej Ciebie", label: "Strefa inwestora" },
+  { key: "volvocloserToYou3", head: "Volvo bliżej Ciebie", label: "Kariera" },
+  { key: "volvocloserToYou4", head: "Volvo bliżej Ciebie", label: "Biuro prasowe" },
+
+]
