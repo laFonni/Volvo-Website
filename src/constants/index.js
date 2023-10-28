@@ -1,14 +1,34 @@
-import ourCarsCard from "../components/navCards/OurCarsCard";
-import purchaseCard from "../components/navCards/PurchaseCard";
-import forOwnersCard from "../components/navCards/ForOwnersCard";
-import aboutUsCard from "../components/navCards/AboutUsCard";
-import { C40_Recharge, XC40_Recharge, EX30, EX90, XC60_Hybrid, XC90, XC90_Hybrid, S90, S90_Hybrid, S60_Hybrid, V90_Hybrid, V60_Hybrid, XC60, XC40, S60, V90, V60, V90_C_C, V60_C_C } from "../assets/Cars";
+import OurCarsCard from "../components/navCards/OurCarsCard";
+import PurchaseCard from "../components/navCards/PurchaseCard";
+import ForOwnersCard from "../components/navCards/ForOwnersCard";
+import AboutUsCard from "../components/navCards/AboutUsCard";
+import {
+  C40_Recharge,
+  XC40_Recharge,
+  EX30,
+  EX90,
+  XC60_Hybrid,
+  XC90,
+  XC90_Hybrid,
+  S90,
+  S90_Hybrid,
+  S60_Hybrid,
+  V90_Hybrid,
+  V60_Hybrid,
+  XC60,
+  XC40,
+  S60,
+  V90,
+  V60,
+  V90_C_C,
+  V60_C_C,
+} from "../assets/Cars";
 
 export const navCards = [
-  { key: "ourCars", label: "Nasze samochody", card: ourCarsCard },
-  { key: "purchase", label: "Zakup", card: purchaseCard },
-  { key: "forOwners", label: "Dla właścicieli", card: forOwnersCard },
-  { key: "aboutUs", label: "O nas", card: aboutUsCard },
+  { key: "ourCars", label: "Nasze samochody", card: OurCarsCard },
+  { key: "purchase", label: "Zakup", card: PurchaseCard },
+  { key: "forOwners", label: "Dla właścicieli", card: ForOwnersCard },
+  { key: "aboutUs", label: "O nas", card: AboutUsCard },
 ];
 
 export const carsCards = [
@@ -151,6 +171,22 @@ export const mildHybridCars = [
     class: "Kombi",
     model: "V60 Cross Country",
     price: "238 900",
-    image: V60_C_C, 
+    image: V60_C_C,
   },
+];
+
+export const purchaseCard = [
+  { key: "offer1", head: "Oferta", label: "Skonfiguruj swoje Volvo" },
+  { key: "offer2", head: "Oferta", label: "Oferty specjalne" },
+  { key: "offer3", head: "Oferta", label: "Dostępne od ręki" },
+  { key: "offer4", head: "Oferta", label: "Sprawdzone auta używane" },
+  { key: "offer5", head: "Oferta", label: "Cenniki" },
+
+  { key: "financing1", head: "Finansowanie", label: "Wynajem długoterminowy dla firm"},
+  { key: "financing2", head: "Finansowanie", label: "Leasing klasyczny" },
+  { key: "financing3", head: "Finansowanie", label: "Usługi finansowe" },
+
+  { key: "others1", head: "Inne", label: "Jazda próbna" },
+  { key: "others2", head: "Inne", label: "Znajdź dealera" },
+  { key: "others3", head: "Inne", label: "Zapisz się do newslettera" },
 ];
