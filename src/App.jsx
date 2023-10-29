@@ -6,7 +6,7 @@ function App() {
   return (
     <main className="cursor-default select-none">
       <Navbar />
-      <section className="bg-gray-50">
+      <section className="">
         Hero
       </section>
     </main>

@@ -1,4 +1,4 @@
-import { VolvoSpreadWord } from "../assets";
+import { VolvoSpreadWord, X_button } from "../assets";
 import { navCards } from "../constants";
 import ButtonText from "./ButtonText";
 import { useState } from "react";
@@ -6,6 +6,8 @@ import OurCarsCard from "./navCards/OurCarsCard";
 import PurchaseCard from "./navCards/PurchaseCard";
 import ForOwnersCard from "./navCards/ForOwnersCard";
 import AboutUsCard from "./navCards/AboutUsCard";
+
+
 
 const routes = {
   ourCars: <OurCarsCard />,
@@ -51,6 +53,12 @@ const Navbar = () => {
           ))}
         </ul>
         {routes[activeCard]}
+        {activeCard ? 
+        <button className="absolute top-[80px] right-4 hover:bg-gray-100 hover:rounded-full p-1" onClick={() => setActiveCard(null)}>
+          <img src={X_button} alt="X_button" height={32} width={32}  />
+        </button> : null }
+
+        
       </nav>
     </header>
   );
