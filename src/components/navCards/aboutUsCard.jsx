@@ -13,6 +13,7 @@ const AboutUsCard = () => {
           <CardList list={aboutUsCard} header={element} key={element} />
         ))}
       </div>
+      
     </section>
   );
 };
