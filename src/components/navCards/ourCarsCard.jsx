@@ -21,8 +21,8 @@ const OurCarsCard = () => {
   };
   return (
     <div className="fixed top-[64px] left-0 w-full h-[80vh] bg-white">
-      <div className="mt-6 mr-3 h-screen">
-        <div className=" mr-6  h-[80vh] flex flex-row justify-center">
+      <div className="mt-6 mr-3 h-[80vh] bg-white">
+        <div className=" mr-6 h-[80vh] flex flex-row justify-center">
           {/* List of types */}
           <ul className=" mr-2 ml-2  w-[250px] ">
             {carsCards.map((type) => (
@@ -51,7 +51,9 @@ const OurCarsCard = () => {
           {/* Grid of cars */}
           {routes[activeGrid]}
         </div>
+        
       </div>
+      
     </div>
   );
 };
