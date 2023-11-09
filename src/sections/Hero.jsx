@@ -2,6 +2,7 @@ import heroVideo from "../assets/HP-hero-ex30.mp4"
 import { useState, useRef} from "react"
 import ButtonVideoHandler from "../components/ButtonVideoHandler"
 import { Pause, Play } from "../assets"
+import EX30LinkOnVideo from "../components/EX30LinkOnVideo"
 
 const Hero = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true)
@@ -33,10 +34,8 @@ const Hero = () => {
         <ButtonVideoHandler handler={handleVideoPause} icon={Pause}/>) : 
         (<ButtonVideoHandler handler={handleVideoPlay} icon={Play}/>
         )}
-      <div className="flex flex-col items-center absolute top-20 ">
-        <h1 className="text-lg bg-black text-white">
-          Hero
-        </h1>
+      <div className="flex flex-col items-center absolute top-16 ">
+        <EX30LinkOnVideo />
       </div>
 
     </div>
