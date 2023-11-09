@@ -17,6 +17,9 @@ import V90 from "./v90.webp";
 import V60 from "./v60.webp";
 import V90_C_C from "./v90-cross-country.webp";
 import V60_C_C from "./v60-cross-country.webp";
+import C40_Back from "./c40-back.webp";
+import XC40_Back from "./xc40-back.webp";
+import XC60_Back from "./xc60-back.webp";
 
 
 export {
@@ -42,5 +45,9 @@ export {
     V60,
     V90_C_C,
     V60_C_C,
+
+    C40_Back,
+    XC40_Back,
+    XC60_Back
 
 }
