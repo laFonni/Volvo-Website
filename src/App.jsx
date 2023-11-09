@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import Electrification from "./sections/Electrification"
 import Hero from "./sections/Hero"
 
 function App() {
@@ -6,8 +7,14 @@ function App() {
   return (
     <main className="cursor-default select-none ">
       <Navbar />
-      <section className="">
+      <section className="flex flex-col">
         <Hero/>
+        Slider
+        <Electrification / >
+        CarsUsedandNew
+        WhyVolvo
+        Links
+        Footer
       </section>
     </main>
   )

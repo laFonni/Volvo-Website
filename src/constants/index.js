@@ -22,6 +22,9 @@ import {
   V60,
   V90_C_C,
   V60_C_C,
+  XC40_Back,
+  XC60_Back,
+  C40_Back,
 } from "../assets/Cars";
 
 export const navCards = [
@@ -229,3 +232,38 @@ export const aboutUsCard = [
   { key: "volvocloserToYou4", head: "Volvo bliżej Ciebie", label: "Biuro prasowe" },
 
 ]
+
+export const TypeCarsCardDB = [
+  {
+    key: "electricCars", 
+    title: "Samochody w pełni elektryczne", 
+    description: "Nasze samochody w pełni elektryczne nie emitują spalin, zapewniając jednocześnie odpowiednio duży zasięg i bardzo dobre osiągi.", 
+    button: "Samochody w pełni elektryczne" ,
+    image:  XC40_Back 
+  },
+  {
+    key: "hybridCars", 
+    title: "Samochody hybrydowe typu plug-in", 
+    description: "Hybrydy plug in łączą w sobie napęd elektryczny i spalinowy, oferując bezproblemową jazdę", 
+    button: "Samochody hybrydowe typu plug-in", 
+    image: XC60_Back
+  },
+  {
+    key: "electricCharging", 
+    title: "Ładowanie energią elektryczną", 
+    description: "Ładowanie samochodu elektrycznego w domu i na trasie może być łatwe, szybkie i ekonomiczne.", 
+    button: "Ładowanie samochodu", 
+    image: C40_Back
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
