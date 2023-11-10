@@ -6,7 +6,7 @@ const Electrification = () => {
   return (
     
 
-    <div className="flex flex-col justify-center items-center  w-full">
+    <div className="flex flex-col items-center w-full pb-24">
         <div className=" max-w-[40rem] ">
             <h1 className="flex justify-center text-4xl font-semibold p-6">Gotowi na elektryfikację?</h1>
             <p className="flex items-center justify-center text-center text-xl text-gray-500 px-5 pb-14">

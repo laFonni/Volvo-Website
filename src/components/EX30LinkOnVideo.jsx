@@ -8,10 +8,10 @@ const EX30LinkOnVideo = () => {
         EX30
       </h1>
       <div className="flex flex-row gap-5 ">
-        <button className="border-[1px] border-white bg-white hover:bg-white/60 duration-300 rounded-md px-8  font-semibold  py-2.5 tracking-wide" >
+        <button className="border-[1px] border-white bg-white hover:bg-white/60 duration-300 ease-in-out rounded-md px-8  font-semibold  py-2.5 tracking-wide" >
           Dowiedz się więcej
         </button>
-        <button className="border-[1px] border-white rounded-md px-8 font-semibold text-white py-2.5 hover:bg-white hover:text-black duration-200 tracking-wide    ">
+        <button className="border-[1px] border-white rounded-md px-8 font-semibold ease-in-out text-white py-2.5 hover:bg-white hover:text-black duration-300 tracking-wide    ">
           Konfiguruj
         </button>
       </div>

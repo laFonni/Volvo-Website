@@ -25,6 +25,8 @@ import {
   XC40_Back,
   XC60_Back,
   C40_Back,
+  VolvoInGarge,
+  VolvoOpenedTrunk,
 } from "../assets/Cars";
 
 export const navCards = [
@@ -256,6 +258,23 @@ export const TypeCarsCardDB = [
     image: C40_Back
   }
 ]
+
+export const RangeOfCarsDB = [
+  {
+    key:"usedCars", 
+    title:"Używane samochody Volvo", 
+    description: "Sprawdź ofertę używanych samochodów Volvo Selekt. Najrozsądniejszy sposób zakupu wysokiej jakości używanego samochodu Volvo.", 
+    image: VolvoInGarge
+  },
+  {
+    key:"newCars", 
+    title: "Nowe samochody Volvo", 
+    description: "Zobacz jakie oferty przygotowaliśmy na nowe samochody specjalnie dla Ciebie.", 
+    image: VolvoOpenedTrunk
+  },
+]
+
+
 
 
 
