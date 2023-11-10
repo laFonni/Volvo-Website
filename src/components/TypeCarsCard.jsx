@@ -12,7 +12,7 @@ const TypeCarsCard = ({title, description, button, image}) => {
         <button className='flex justify-start pl-6 font-semibold tracking-wide text-blue-900 '>
             <span className='hover:underline pr-2' >{button}</span> &#62;
         </button>
-        <img className="absolute bottom-0" src={image} alt="" />
+        <img className="absolute bottom-0" src={image} alt={image} />
     </div>
   )
 }

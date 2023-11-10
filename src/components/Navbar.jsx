@@ -27,11 +27,11 @@ const Navbar = () => {
   };
 
   return (
-    // #FIXME: clicking off the card does not close it on video
+
     <> 
       {activeCard && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-20 z-5"
+          className="fixed inset-0 bg-black bg-opacity-20 z-10"
           onClick={() => setActiveCard(null)}
         />
       )}

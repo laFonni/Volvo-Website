@@ -20,6 +20,8 @@ import V60_C_C from "./v60-cross-country.webp";
 import C40_Back from "./c40-back.webp";
 import XC40_Back from "./xc40-back.webp";
 import XC60_Back from "./xc60-back.webp";
+import VolvoInGarge from "./volvo-in-garage.webp";
+import VolvoOpenedTrunk from "./volvo-opened-trunk.webp";
 
 
 export {
@@ -48,6 +50,9 @@ export {
 
     C40_Back,
     XC40_Back,
-    XC60_Back
+    XC60_Back,
+
+    VolvoInGarge,
+    VolvoOpenedTrunk
 
 }

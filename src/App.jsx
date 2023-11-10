@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar"
 import Electrification from "./sections/Electrification"
 import Hero from "./sections/Hero"
+import RangeOfCars from "./sections/RangeOfCars"
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
         <Hero/>
         Slider
         <Electrification / >
-        CarsUsedandNew
+        <RangeOfCars />
         WhyVolvo
         Links
         Footer
