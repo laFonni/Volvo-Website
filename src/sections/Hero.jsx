@@ -29,7 +29,6 @@ const Hero = () => {
         muted
         className=" object-cover w-full h-full -z-10 overflow-hidden " 
       />
-      {/* #TODO add EX30 link */}
       {isVideoPlaying ? (
         <ButtonVideoHandler handler={handleVideoPause} icon={Pause}/>) : 
         (<ButtonVideoHandler handler={handleVideoPlay} icon={Play}/>

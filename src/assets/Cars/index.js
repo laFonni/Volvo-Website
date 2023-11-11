@@ -22,6 +22,7 @@ import XC40_Back from "./xc40-back.webp";
 import XC60_Back from "./xc60-back.webp";
 import VolvoInGarge from "./volvo-in-garage.webp";
 import VolvoOpenedTrunk from "./volvo-opened-trunk.webp";
+import EX30_Side from "./ex30-side.webp";
 
 
 export {
@@ -53,6 +54,8 @@ export {
     XC60_Back,
 
     VolvoInGarge,
-    VolvoOpenedTrunk
+    VolvoOpenedTrunk,
+
+    EX30_Side,
 
 }

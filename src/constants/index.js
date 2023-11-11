@@ -27,6 +27,7 @@ import {
   C40_Back,
   VolvoInGarge,
   VolvoOpenedTrunk,
+  EX30_Side,
 } from "../assets/Cars";
 
 export const navCards = [
@@ -187,14 +188,17 @@ export const purchaseCard = [
   { key: "offer4", head: "Oferta", label: "Sprawdzone auta używane" },
   { key: "offer5", head: "Oferta", label: "Cenniki" },
 
-  { key: "financing1", head: "Finansowanie", label: "Wynajem długoterminowy dla firm"},
+  {
+    key: "financing1",
+    head: "Finansowanie",
+    label: "Wynajem długoterminowy dla firm",
+  },
   { key: "financing2", head: "Finansowanie", label: "Leasing klasyczny" },
   { key: "financing3", head: "Finansowanie", label: "Usługi finansowe" },
 
   { key: "others1", head: "Inne", label: "Jazda próbna" },
   { key: "others2", head: "Inne", label: "Znajdź dealera" },
   { key: "others3", head: "Inne", label: "Zapisz się do newslettera" },
-
 ];
 
 export const forOwnersCard = [
@@ -206,20 +210,48 @@ export const forOwnersCard = [
   { key: "accesories1", head: "Akcesoria", label: "Akcesoria" },
   { key: "accesories2", head: "Akcesoria", label: "Produkt kwartału" },
 
-  { key: "helpAndExploitation1", head: "Pomoc i eksploatacja", label: "Zgłoś szkodę" },
-  { key: "helpAndExploitation2", head: "Pomoc i eksploatacja", label: "Assistance" },
-  { key: "helpAndExploitation3", head: "Pomoc i eksploatacja", label: "Wsparcie i instrukcje" },
-  { key: "helpAndExploitation4", head: "Pomoc i eksploatacja", label: "Volvo Exchange System" },
+  {
+    key: "helpAndExploitation1",
+    head: "Pomoc i eksploatacja",
+    label: "Zgłoś szkodę",
+  },
+  {
+    key: "helpAndExploitation2",
+    head: "Pomoc i eksploatacja",
+    label: "Assistance",
+  },
+  {
+    key: "helpAndExploitation3",
+    head: "Pomoc i eksploatacja",
+    label: "Wsparcie i instrukcje",
+  },
+  {
+    key: "helpAndExploitation4",
+    head: "Pomoc i eksploatacja",
+    label: "Volvo Exchange System",
+  },
 
   { key: "volvoOnLine1", head: "Volovo on-line", label: "Volvo Car App" },
   { key: "volvoOnLine2", head: "Volovo on-line", label: "Volvo ID" },
 ];
 
 export const aboutUsCard = [
-  { key: "elecrtification1", head: "Elektryfikacja", label: "Samochody elektryczne" },
-  { key: "elecrtification2", head: "Elektryfikacja", label: "Samochody typu plug-in" },
+  {
+    key: "elecrtification1",
+    head: "Elektryfikacja",
+    label: "Samochody elektryczne",
+  },
+  {
+    key: "elecrtification2",
+    head: "Elektryfikacja",
+    label: "Samochody typu plug-in",
+  },
   { key: "elecrtification3", head: "Elektryfikacja", label: "Ładowanie" },
-  { key: "elecrtification4", head: "Elektryfikacja", label: "Stacje ładowania Volvo" },
+  {
+    key: "elecrtification4",
+    head: "Elektryfikacja",
+    label: "Stacje ładowania Volvo",
+  },
 
   { key: "aboutVolvo1", head: "O Volvo Cars", label: "Nasza historia" },
   { key: "aboutVolvo2", head: "O Volvo Cars", label: "Bezpieczeństwo" },
@@ -229,60 +261,142 @@ export const aboutUsCard = [
   { key: "aboutVolvo6", head: "O Volvo Cars", label: "Samochody Rodzinne" },
 
   { key: "volvocloserToYou1", head: "Volvo bliżej Ciebie", label: "Tech Hub" },
-  { key: "volvocloserToYou2", head: "Volvo bliżej Ciebie", label: "Strefa inwestora" },
+  {
+    key: "volvocloserToYou2",
+    head: "Volvo bliżej Ciebie",
+    label: "Strefa inwestora",
+  },
   { key: "volvocloserToYou3", head: "Volvo bliżej Ciebie", label: "Kariera" },
-  { key: "volvocloserToYou4", head: "Volvo bliżej Ciebie", label: "Biuro prasowe" },
-
-]
+  {
+    key: "volvocloserToYou4",
+    head: "Volvo bliżej Ciebie",
+    label: "Biuro prasowe",
+  },
+];
 
 export const TypeCarsCardDB = [
   {
-    key: "electricCars", 
-    title: "Samochody w pełni elektryczne", 
-    description: "Nasze samochody w pełni elektryczne nie emitują spalin, zapewniając jednocześnie odpowiednio duży zasięg i bardzo dobre osiągi.", 
-    button: "Samochody w pełni elektryczne" ,
-    image:  XC40_Back 
+    key: "electricCars",
+    title: "Samochody w pełni elektryczne",
+    description:
+      "Nasze samochody w pełni elektryczne nie emitują spalin, zapewniając jednocześnie odpowiednio duży zasięg i bardzo dobre osiągi.",
+    button: "Samochody w pełni elektryczne",
+    image: XC40_Back,
   },
   {
-    key: "hybridCars", 
-    title: "Samochody hybrydowe typu plug-in", 
-    description: "Hybrydy plug in łączą w sobie napęd elektryczny i spalinowy, oferując bezproblemową jazdę", 
-    button: "Samochody hybrydowe typu plug-in", 
-    image: XC60_Back
+    key: "hybridCars",
+    title: "Samochody hybrydowe typu plug-in",
+    description:
+      "Hybrydy plug in łączą w sobie napęd elektryczny i spalinowy, oferując bezproblemową jazdę",
+    button: "Samochody hybrydowe typu plug-in",
+    image: XC60_Back,
   },
   {
-    key: "electricCharging", 
-    title: "Ładowanie energią elektryczną", 
-    description: "Ładowanie samochodu elektrycznego w domu i na trasie może być łatwe, szybkie i ekonomiczne.", 
-    button: "Ładowanie samochodu", 
-    image: C40_Back
-  }
-]
+    key: "electricCharging",
+    title: "Ładowanie energią elektryczną",
+    description:
+      "Ładowanie samochodu elektrycznego w domu i na trasie może być łatwe, szybkie i ekonomiczne.",
+    button: "Ładowanie samochodu",
+    image: C40_Back,
+  },
+];
 
 export const RangeOfCarsDB = [
   {
-    key:"usedCars", 
-    title:"Używane samochody Volvo", 
-    description: "Sprawdź ofertę używanych samochodów Volvo Selekt. Najrozsądniejszy sposób zakupu wysokiej jakości używanego samochodu Volvo.", 
-    image: VolvoInGarge
+    key: "usedCars",
+    title: "Używane samochody Volvo",
+    description:
+      "Sprawdź ofertę używanych samochodów Volvo Selekt. Najrozsądniejszy sposób zakupu wysokiej jakości używanego samochodu Volvo.",
+    image: VolvoInGarge,
   },
   {
-    key:"newCars", 
-    title: "Nowe samochody Volvo", 
-    description: "Zobacz jakie oferty przygotowaliśmy na nowe samochody specjalnie dla Ciebie.", 
-    image: VolvoOpenedTrunk
+    key: "newCars",
+    title: "Nowe samochody Volvo",
+    description:
+      "Zobacz jakie oferty przygotowaliśmy na nowe samochody specjalnie dla Ciebie.",
+    image: VolvoOpenedTrunk,
   },
-]
+];
 
-
-
-
-
-
-
-
-
-
-
-
-
+export const AllCars = [
+  {
+    key: "ex30",
+    class: "SUV",
+    model: "EX30",
+    price: "169 900",
+    type: "W pełni elektryczne",
+    image: EX30_Side,
+  },
+  {
+    key: "ex90",
+    class: "SUV",
+    model: "EX90",
+    price: "399 900",
+    type: "Pure Electric",
+    image: EX30_Side,
+  },
+  {
+    key: "xc90",
+    class: "SUV",
+    model: "XC90",
+    price: "379 900",
+    type: "Plug-in hybrid",
+    image: EX30_Side,
+  },
+  {
+    key: "xc60",
+    class: "SUV",
+    model: "XC60",
+    price: "264 900",
+    type: "Plug-in hybrid",
+    image: EX30_Side,
+  },
+  {
+    key: "xc40recharge",
+    class: "SUV",
+    model: "XC40 Recharge",
+    price: "249 300",
+    type: "Plug-in hybrid",
+    image: EX30_Side,
+  },
+  {
+    key: "c40recharge",
+    class: "Crossover",
+    model: "C40 Recharge",
+    price: "256 900",
+    type: "Pure Electric",
+    image: EX30_Side,
+  },
+  {
+    key: "v90",
+    class: "Kombi",
+    model: "V90",
+    price: "299 900",
+    type: "Plug-in hybrid",
+    image: EX30_Side,
+  },
+  {
+    key: "v60",
+    class: "Kombi",
+    model: "V60",
+    price: "244 900",
+    type: "Plug-in hybrid",
+    image: EX30_Side,
+  },
+  {
+    key: "s90recharge",
+    class: "Sedan",
+    model: "S90 Recharge",
+    price: "323 900",
+    type: "Plug-in hybrid",
+    image: EX30_Side,
+  },
+  {
+    key: "s60recharge",
+    class: "Sedan",
+    model: "S60 Recharge",
+    price: "349 900",
+    type: "Plug-in hybrid",
+    image: EX30_Side,
+  },
+];
