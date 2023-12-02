@@ -7,7 +7,7 @@ const CaruselOfCars = () => {
         
           desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 4
+            items: 4,
           },
           tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -19,7 +19,7 @@ const CaruselOfCars = () => {
           }
     };
     return (
-        <div className='flex flex-col pt-20 bg-red-100 px-5 justify-center items-center'>
+        <div className='flex flex-col pt-20 bg-red-100  '>
             <div className='flex justify-center text-4xl font-semibold pb-6'>
                 Wszystie modele Recharge
             </div>
@@ -30,26 +30,21 @@ const CaruselOfCars = () => {
                 <div className=''>Sedan(2)</div>
                 <div className=''>Kombi(2)</div>
             </button>
-            <div className=' flex items-center bg-red-300 '>
-                <Carousel 
-                    responsive={responsive}
-                    className='flex justify-center '
-                    showDots={true}
-                    containerClass='carousel-container'
-                    
-                    >
-                    <CarouselCarCard />
-                    <CarouselCarCard />
-                    <CarouselCarCard />
-                    <CarouselCarCard />
-                    <CarouselCarCard />
-                    <CarouselCarCard />
-                    <CarouselCarCard />
-                    <CarouselCarCard />
-                    <CarouselCarCard />
-                    <CarouselCarCard />
+            <div className='bg-red-300 marginCardsSidesCenter'>
+            <Carousel 
+                responsive={responsive}
+                itemClass="carouselItem"
+                partialVisible={true}
+                >
 
-                </Carousel>
+
+                <div className='w-[290px] bg-slate-500 '>Item 1</div>
+                <div className='w-[290px] bg-slate-500 '>Item 2</div>
+                <div className='w-[290px] bg-slate-500 '>Item 3</div>
+                <div className='w-[290px] bg-slate-500 '>Item 4</div>
+                <div className='w-[290px] bg-slate-500 '>Item 3</div>
+                <div className='w-[290px] bg-slate-500 '>Item 4</div>
+            </Carousel>          
             </div>
         </div>
     )
