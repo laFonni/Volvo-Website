@@ -2,7 +2,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CarouselCarCard from '../components/CarouselCarCard';
 import PropTypes from 'prop-types';
-
+import { arrowBlackRight, arrowBlackLeft, arrowGreyLeft, arrowGreyRight } from '../assets';
+import { AllCars } from '../constants';
 
 
 
@@ -27,9 +28,12 @@ const CaruselOfCars = () => {
 
 
 
+  
+
+
     const CustomRightArrow = ({ onClick, ...rest }) => (
-        <button className="custom-arrow" onClick={() => onClick()} {...rest}>
-            Right
+        <button onClick={() => onClick()} {...rest}>
+            <img src={arrowBlackRight} alt='arrowRight' height={36} width={36} />
         </button>
     );
 
@@ -38,8 +42,8 @@ const CaruselOfCars = () => {
     };
     
       const CustomLeftArrow = ({ onClick, ...rest }) => (
-        <button className="bg-black p-10" onClick={() => onClick()} {...rest}>
-          Left
+        <button onClick={() => onClick()} {...rest}>
+          <img src={arrowBlackLeft} alt='arrowRight' height={36} width={36} />
         </button>
       );
 
@@ -49,7 +53,7 @@ const CaruselOfCars = () => {
 
 
     return (
-        <div className='flex flex-col pt-20 bg-red-100  '>
+        <div className='flex flex-col pt-20 bg-red-100  relative'>
             <div className='flex justify-center text-4xl font-semibold pb-6'>
                 Wszystie modele Recharge
             </div>
@@ -61,32 +65,27 @@ const CaruselOfCars = () => {
                 <div className=''>Kombi(2)</div>
             </button>
             
-            <div className='marginCardsSidesCenter relative pb-24'>
+            <div className='marginCardsSidesCenter relative pb-10 '>
             <Carousel 
                 responsive={responsive}
                 partialVisible={false}
-                customRightArrow={<CustomRightArrow />}
-                customLeftArrow={<CustomLeftArrow />}   
-                
-                
-                
+                customLeftArrow={<CustomLeftArrow className='absolute bottom-6 right-20 z-10'/>}
+                customRightArrow={<CustomRightArrow className='absolute bottom-6 right-8 z-10 '/>}
+                className='pb-24'  
+                transitionDuration={100}
                 
                 >
-                <CarouselCarCard/>
-                <CarouselCarCard/>
-                <CarouselCarCard/>
-                <CarouselCarCard/>
-                <CarouselCarCard/>
-                <CarouselCarCard/>
-                <CarouselCarCard/>
-                <CarouselCarCard/>
-                <CarouselCarCard/>
-                <CarouselCarCard/>
+                {AllCars.map((car) => (
+                    <CarouselCarCard key={car.model} classOfCar={car.classOfCar} model={car.model} price={car.price} type={car.type} image={car.image} />
+                ))}
                 
             
             </Carousel>          
+            <img src={arrowGreyLeft} alt='arrowRight' height={36} width={36} className='absolute bottom-16 right-20'/>
+            <img src={arrowGreyRight} alt='arrowRight' height={36} width={36} className='absolute bottom-16 right-8'/>
             
             </div>
+            
             
         </div>
     )
