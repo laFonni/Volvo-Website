@@ -1,13 +1,19 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CarouselCarCard from '../components/CarouselCarCard';
+import PropTypes from 'prop-types';
+
+
+
 
 const CaruselOfCars = () => {
+
     const responsive = {
         
           desktop: {
             breakpoint: { max: 3000, min: 1024 },
             items: 4,
+            
           },
           tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -18,6 +24,30 @@ const CaruselOfCars = () => {
             items: 1
           }
     };
+
+
+
+    const CustomRightArrow = ({ onClick, ...rest }) => (
+        <button className="custom-arrow" onClick={() => onClick()} {...rest}>
+            Right
+        </button>
+    );
+
+    CustomRightArrow.propTypes = {
+        onClick: PropTypes.func.isRequired,
+    };
+    
+      const CustomLeftArrow = ({ onClick, ...rest }) => (
+        <button className="bg-black p-10" onClick={() => onClick()} {...rest}>
+          Left
+        </button>
+      );
+
+        CustomLeftArrow.propTypes = {
+            onClick: PropTypes.func.isRequired,
+        };
+
+
     return (
         <div className='flex flex-col pt-20 bg-red-100  '>
             <div className='flex justify-center text-4xl font-semibold pb-6'>
@@ -30,22 +60,34 @@ const CaruselOfCars = () => {
                 <div className=''>Sedan(2)</div>
                 <div className=''>Kombi(2)</div>
             </button>
-            <div className='bg-red-300 marginCardsSidesCenter'>
+            
+            <div className='marginCardsSidesCenter relative pb-24'>
             <Carousel 
                 responsive={responsive}
-                itemClass="carouselItem"
-                partialVisible={true}
+                partialVisible={false}
+                customRightArrow={<CustomRightArrow />}
+                customLeftArrow={<CustomLeftArrow />}   
+                
+                
+                
+                
                 >
-
-
-                <div className='w-[290px] bg-slate-500 '>Item 1</div>
-                <div className='w-[290px] bg-slate-500 '>Item 2</div>
-                <div className='w-[290px] bg-slate-500 '>Item 3</div>
-                <div className='w-[290px] bg-slate-500 '>Item 4</div>
-                <div className='w-[290px] bg-slate-500 '>Item 3</div>
-                <div className='w-[290px] bg-slate-500 '>Item 4</div>
+                <CarouselCarCard/>
+                <CarouselCarCard/>
+                <CarouselCarCard/>
+                <CarouselCarCard/>
+                <CarouselCarCard/>
+                <CarouselCarCard/>
+                <CarouselCarCard/>
+                <CarouselCarCard/>
+                <CarouselCarCard/>
+                <CarouselCarCard/>
+                
+            
             </Carousel>          
+            
             </div>
+            
         </div>
     )
 }

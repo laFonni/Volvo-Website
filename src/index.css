@@ -8,14 +8,8 @@
 }
 
 .marginCardsSidesCenter{
-  margin-left: calc(50vw - 623px) ;
-  margin-right: calc(50vw - 636px);
+  margin-left: calc(50vw - 624px) ;
+  margin-right: calc(50vw - 646px);
 }
 
-.carouselItem {
-  margin-right: 2.5px;
-}
 
-.carousel-item {
-  margin-right: 10px; /* Ustaw stały margines jako przerwę między elementami */
-}
