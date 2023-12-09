@@ -17,7 +17,7 @@ const CarouselCarCard = ({classOfCar, model, price, type, image}) => {
 }
 
 CarouselCarCard.propTypes = {
-    class: propTypes.string,
+    classOfCar: propTypes.string,
     model: propTypes.string,
     price: propTypes.string,
     type: propTypes.string,
