@@ -321,7 +321,7 @@ export const RangeOfCarsDB = [
 export const AllCars = [
   {
     key: "ex30",
-    class: "SUV",
+    classOfCar: "SUV",
     model: "EX30",
     price: "169 900",
     type: "W pełni elektryczne",
@@ -329,7 +329,7 @@ export const AllCars = [
   },
   {
     key: "ex90",
-    class: "SUV",
+    classOfCar: "SUV",
     model: "EX90",
     price: "399 900",
     type: "Pure Electric",
@@ -337,7 +337,7 @@ export const AllCars = [
   },
   {
     key: "xc90",
-    class: "SUV",
+    classOfCar: "SUV",
     model: "XC90",
     price: "379 900",
     type: "Plug-in hybrid",
@@ -345,7 +345,7 @@ export const AllCars = [
   },
   {
     key: "xc60",
-    class: "SUV",
+    classOfCar: "SUV",
     model: "XC60",
     price: "264 900",
     type: "Plug-in hybrid",
@@ -353,7 +353,7 @@ export const AllCars = [
   },
   {
     key: "xc40recharge",
-    class: "SUV",
+    classOfCar: "SUV",
     model: "XC40 Recharge",
     price: "249 300",
     type: "Plug-in hybrid",
@@ -361,7 +361,7 @@ export const AllCars = [
   },
   {
     key: "c40recharge",
-    class: "Crossover",
+    classOfCar: "Crossover",
     model: "C40 Recharge",
     price: "256 900",
     type: "Pure Electric",
@@ -369,7 +369,7 @@ export const AllCars = [
   },
   {
     key: "v90",
-    class: "Kombi",
+    classOfCar: "Kombi",
     model: "V90",
     price: "299 900",
     type: "Plug-in hybrid",
@@ -377,7 +377,7 @@ export const AllCars = [
   },
   {
     key: "v60",
-    class: "Kombi",
+    classOfCar: "Kombi",
     model: "V60",
     price: "244 900",
     type: "Plug-in hybrid",
@@ -385,7 +385,7 @@ export const AllCars = [
   },
   {
     key: "s90recharge",
-    class: "Sedan",
+    classOfCar: "Sedan",
     model: "S90 Recharge",
     price: "323 900",
     type: "Plug-in hybrid",
@@ -393,7 +393,7 @@ export const AllCars = [
   },
   {
     key: "s60recharge",
-    class: "Sedan",
+    classOfCar: "Sedan",
     model: "S60 Recharge",
     price: "349 900",
     type: "Plug-in hybrid",
