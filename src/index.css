@@ -7,9 +7,19 @@
   grid-template-columns: repeat(4, minmax(170px, 170px));
 }
 
-.marginCardsSidesCenter{
+.marginCardsSidesCenterOf4andAbove{
   margin-left: calc(50vw - 624px) ;
   margin-right: calc(50vw - 646px);
+}
+
+.marginCardsSidesCenter1{
+  margin-left: calc(50vw - 152px) ;
+  margin-right: calc(50vw - 154px);
+}
+
+.marginCardsSidesCenter2{
+  margin-left: calc(50vw - 310px) ;
+  margin-right: calc(50vw - 332px);
 }
 
 
