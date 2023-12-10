@@ -37,12 +37,12 @@ const responsive = {
   },
 };
 
-const CarouselOfAbove4 = ({ activeClassOfCar }) => {
+const CarouselOfAllCars = ({ activeClassOfCar }) => {
   let classOfCar = AllCars.filter((car) =>
     activeClassOfCar == "AllCars" ? car : car.classOfCar === activeClassOfCar
   );
 
-  CarouselOfAbove4.propTypes = {
+  CarouselOfAllCars.propTypes = {
     activeClassOfCar: PropTypes.string.isRequired,
   };
 
@@ -91,4 +91,4 @@ const CarouselOfAbove4 = ({ activeClassOfCar }) => {
   );
 };
 
-export default CarouselOfAbove4;
+export default CarouselOfAllCars;
