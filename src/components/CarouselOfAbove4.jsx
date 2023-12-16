@@ -47,7 +47,7 @@ const CarouselOfAbove4 = ({ activeClassOfCar }) => {
   };
 
   return (
-    <div className="marginCardsSidesCenterOf4andAbove relative pb-10 ">
+    <div className="marginCardsSidesCenterOf4andAbove relative ">
       <Carousel
         responsive={responsive}
         draggable={false}
@@ -78,14 +78,14 @@ const CarouselOfAbove4 = ({ activeClassOfCar }) => {
         alt="arrowRight"
         height={36}
         width={36}
-        className="absolute bottom-16 right-20"
+        className="absolute bottom-6 right-20"
       />
       <img
         src={arrowGreyRight}
         alt="arrowRight"
         height={36}
         width={36}
-        className="absolute bottom-16 right-8"
+        className="absolute bottom-6 right-8"
       />
     </div>
   );

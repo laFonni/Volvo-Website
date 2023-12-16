@@ -7,7 +7,7 @@ import CaruselOfCars from "./sections/CaruselOfCars"
 function App() {
 
   return (
-    <main className="cursor-default select-none ">
+    <main className="cursor-default select-none  ">
       <Navbar />
       <section className="flex flex-col">
         <Hero/>

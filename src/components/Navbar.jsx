@@ -31,7 +31,7 @@ const Navbar = () => {
     <> 
       {activeCard && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-20 z-10"
+          className="fixed inset-0 bg-black bg-opacity-20 z-10 overflow-y-hidden"
           onClick={() => setActiveCard(null)}
         />
       )}

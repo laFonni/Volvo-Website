@@ -18,7 +18,7 @@ const CaruselOfCars = () => {
   const [activeCarousel, setActiveCarousel] = useState("AllCars");
 
   return (
-    <div className="flex flex-col pt-24   relative">
+    <div className="flex flex-col pt-24 ">
       <div className="flex justify-center text-4xl font-semibold pb-10">
         Wszystie modele Recharge
       </div>
@@ -29,9 +29,14 @@ const CaruselOfCars = () => {
             {key == 'AllCars' ? 'Wszystkie (10)' : `${key} (${AllCars.filter((car) => car.classOfCar === key).length})`}
           </button>
         ))}
-      </div>
-
+      </div>      
       {routes[activeCarousel]}
+      <div className="flex items-center justify-center pt-2">
+          <p className="max-w-[1150px] text-center text-xs  text-gray-500 pb-20  ">
+          * Jest to cena orientacyjna, która może ulec zmianie przed dostawą samochodu z powodu czynników od nas niezależnych, takich jak wzrost podatków, opłat, stóp procentowych itp. Poinformujemy Cię o wszelkich zmianach i będziesz mieć możliwość anulowania zamówienia w dowolnym momencie przed dostawą.
+          </p>
+      </div>
+      
     </div>
   );
 };
