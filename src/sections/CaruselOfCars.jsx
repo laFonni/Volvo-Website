@@ -18,7 +18,7 @@ const CaruselOfCars = () => {
   const [activeCarousel, setActiveCarousel] = useState("AllCars");
 
   return (
-    <div className="flex flex-col pt-24 bg-red-100  relative">
+    <div className="flex flex-col pt-24   relative">
       <div className="flex justify-center text-4xl font-semibold pb-10">
         Wszystie modele Recharge
       </div>
