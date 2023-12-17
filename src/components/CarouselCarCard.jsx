@@ -16,9 +16,9 @@ const CarouselCarCard = ({classOfCar, model, price, type, image}) => {
         <img src={image} alt={model} width={290} height={220}  className={`${ isHovered ? 'scale-110 duration-500 ease-in-out' : 'scale-100 duration-500 ease-in-out' }`}  />
       </div>
     </div>
-        <div className='flex flex-row justify-between px-6 pt-12 font-bold text-sky-800 text-lg hover:underline decoration-1 '>
-            <button>Więcej &#62;</button>
-            <button>Wybierz &#62;</button>
+        <div className='flex flex-row justify-between px-6 pt-12 font-bold text-sky-800 text-lg  '>
+            <button className='hover:underline decoration-1' >Więcej &#62;</button>
+            <button className='hover:underline decoration-1'>Wybierz &#62;</button>
         </div>
     </div>
   )
