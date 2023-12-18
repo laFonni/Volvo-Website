@@ -400,3 +400,22 @@ export const AllCars = [
     image: EX30_Side,
   },
 ];
+
+export const WhyVolvoInfoCards = [
+  {
+    key: "easerlive",
+    title: "Ułatwiamy Ci życie",
+    info: "Nasz nowy pomysł na podróż. Korzystaj z Volvo, kiedy chcesz i jak chcesz.",
+  },
+  {
+    key: "futureelectric",
+    title: "Przyszłość to napęd elektryczny",
+    info: "Wszystkie nasze modele dostępne są z napędem elektrycznym. To ulga dla środowiska naturalnego."
+  },
+  {
+    key: "protectimportant",
+    title: "Chrońmy to, co ważne",
+    info: "Jesteśmy dumni z naszych dokonań w dziedzinie bezpieczeństwa. Nie ustajemy w pracach nad innowacjami, które chronią to, co ważne."
+  }
+
+];
