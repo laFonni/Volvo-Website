@@ -3,6 +3,7 @@ import Electrification from "./sections/Electrification"
 import Hero from "./sections/Hero"
 import RangeOfCars from "./sections/RangeOfCars"
 import CaruselOfCars from "./sections/CaruselOfCars"
+import WhyVolvo from "./sections/WhyVolvo"
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
         <CaruselOfCars/>
         <Electrification / >
         <RangeOfCars />
-        WhyVolvo
+        <WhyVolvo />
         Links
         Footer
       </section>
