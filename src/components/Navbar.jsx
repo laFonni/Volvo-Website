@@ -47,7 +47,7 @@ const Navbar = () => {
             />
           </a>
 
-          <ul className="flex flex-1 flex-row w-full justify-center h-10 items-center">
+          <ul className="flex flex-1 flex-row w-full justify-center h-10 items-center ">
             {navCards.map((card) => (
               <li
                 className="mr-8"

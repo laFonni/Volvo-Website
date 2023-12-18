@@ -20,10 +20,10 @@ const Hero = () => {
 
 
   return (
-    <div className="flex items-end justify-center w-full h-full bg-black/10 relative">
+    <div onClick={isVideoPlaying ? handleVideoPause : handleVideoPlay} className="flex items-end justify-center w-full h-full bg-black/10 relative">
       <video 
         ref={videoRef}
-        src={heroVideo}
+        src={heroVideo} 
         autoPlay
         loop
         muted
