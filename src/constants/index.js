@@ -29,6 +29,7 @@ import {
   VolvoOpenedTrunk,
   EX30_Side,
 } from "../assets/Cars";
+import { FacebookLogo, InstagramLogo, PinterstLogo, TwitterLogo, YouTubeLogo } from "../assets/logos";
 
 export const navCards = [
   { key: "ourCars", label: "Nasze samochody", card: OurCarsCard },
@@ -419,3 +420,81 @@ export const WhyVolvoInfoCards = [
   }
 
 ];
+
+export const FooterInfo = [
+  {
+    key: "help1",
+    head: "Pomoc i wsparcie",
+    label: "Serwis"
+  },
+  {
+    key: "help2",
+    head: "Pomoc i wsparcie",
+    label: "Wsparcie i instrukcje"
+  },
+  {
+    key: "help3",
+    head: "Pomoc i wsparcie",
+    label: "Gwarancja"
+  },
+  {
+    key: "help4",
+    head: "Pomoc i wsparcie",
+    label: "Stacje demontażu"
+  },
+
+  {
+    key: "contact1",
+    head: "Skontaktuj sie z nami",
+    label: "Kontakt"
+  },
+  {
+    key: "contact2",
+    head: "Skontaktuj sie z nami",
+    label: "Znajdź dealera"
+  },
+  {
+    key: "contact3",
+    head: "Skontaktuj sie z nami",
+    label: "Jazda próbna"
+  },
+
+  {
+    key: "apps1",
+    head: "Volvo Cars App",
+    label: "App Store"
+  },
+  {
+    key: "apps2",
+    head: "Volvo Cars App",
+    label: "Google play"
+  }
+]
+
+export const SocialMedia = [
+  {
+    key: "facebook",
+    label: "Facebook",
+    image: FacebookLogo
+  },
+  {
+    key: "instagram",
+    label: "Instagram",
+    image: InstagramLogo
+  },
+  {
+    key: "twitter",
+    label: "Twitter",
+    image: TwitterLogo
+  },
+  {
+    key: "youtube",
+    label: "Youtube",
+    image: YouTubeLogo
+  },
+  {
+    key: "pinterest",
+    label: "Pinterest",
+    image: PinterstLogo
+  }
+]
