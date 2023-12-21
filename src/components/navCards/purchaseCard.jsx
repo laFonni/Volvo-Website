@@ -7,7 +7,7 @@ const PurchaseCard = () => {
   );
 
   return (
-    <section className="fixed top-[64px] left-0 w-full p-12 bg-white ">
+    <section className="fixed top-[64px] left-0 w-full p-12 bg-white justify-center">
       <div className="flex flex-row justify-center gap-8 ml-10">
         {headers.map((element) => (
           <CardList list={purchaseCard} header={element} key={element} />
