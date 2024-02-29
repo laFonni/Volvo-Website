@@ -2,27 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.overflow-hidden-k {
-  overflow-y: hidden;
-}
-
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(170px, 170px));
 }
 
-.marginCardsSidesCenterOf4andAbove{
-  margin-left: calc(50vw - 624px) ;
+.marginCardsSidesCenterOf4andAbove {
+  margin-left: calc(50vw - 624px);
   margin-right: calc(50vw - 646px);
 }
 
-.marginCardsSidesCenter1{
-  margin-left: calc(50vw - 152px) ;
+.noScroll {
+  overflow-y: hidden;
+}
+
+.marginCardsSidesCenter1 {
+  margin-left: calc(50vw - 152px);
   margin-right: calc(50vw - 154px);
 }
 
-.marginCardsSidesCenter2{
-  margin-left: calc(50vw - 310px) ;
+.marginCardsSidesCenter2 {
+  margin-left: calc(50vw - 310px);
   margin-right: calc(50vw - 332px);
 }
 
-
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}

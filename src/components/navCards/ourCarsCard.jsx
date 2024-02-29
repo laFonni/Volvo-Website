@@ -23,14 +23,21 @@ const OurCarsCard = () => {
     <div className="fixed top-[64px] left-0 w-full h-[80vh] bg-white">
       <div className="mt-6 mr-3 h-[80vh] bg-white overflow-hidden">
         <div className="mr-6 h-[80vh] flex flex-row justify-center ">
-      
-
-          
-          <motion.div className="bg-blue-800 h-[50px] w-[3px] mt-[110px]  rounded-full " animate={activeGrid === "electric" ? {y: -90} : activeGrid === "hybrid" ? {y: 0} : {y: 90}}> </motion.div>
+          <motion.div
+            className="bg-blue-800 h-[50px] w-[3px] mt-[110px]  rounded-full "
+            animate={
+              activeGrid === "electric"
+                ? { y: -90 }
+                : activeGrid === "hybrid"
+                ? { y: 0 }
+                : { y: 90 }
+            }
+          >
+            {" "}
+          </motion.div>
           {/* List of types */}
           <ul className=" mr-2 ml-2 mt-4  w-[250px]  ">
             {carsCards.map((type) => (
-              
               <li
                 className="flex flex-col justify-start cursor-pointer mb-4 "
                 key={type.key}

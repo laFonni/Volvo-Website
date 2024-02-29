@@ -5,8 +5,7 @@ import TitleOfGrid from "./TitleOfGrid";
 const CarsGrid = ({ cars, type }) => {
   return (
     <>
-      
-      <TitleOfGrid label={type}/>
+      <TitleOfGrid label={type} />
       <div className="grid grid-cols-4 gap-10 mb-4">
         {cars.map(
           (cars) =>

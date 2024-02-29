@@ -6,24 +6,21 @@ import CaruselOfCars from "./sections/CaruselOfCars";
 import WhyVolvo from "./sections/WhyVolvo";
 import Links from "./sections/Links";
 import Footer from "./sections/Footer";
-import { useState } from "react";
+
 
 function App() {
-
-
-
   return (
-    <main className="cursor-default select-none ">
-      <Navbar />
-      <section className={`flex flex-col  $ `}>
+    <main className=" cursor-default select-none ">
+      <div className="flex flex-col h-[100vh] ">
+        <Navbar />
         <Hero />
-        <CaruselOfCars />
-        <Electrification />
-        <RangeOfCars />
-        <WhyVolvo />
-        <Links />
-        <Footer />
-      </section>
+      </div>
+      <CaruselOfCars />
+      <Electrification />
+      <RangeOfCars />
+      <WhyVolvo />
+      <Links />
+      <Footer />
     </main>
   );
 }
