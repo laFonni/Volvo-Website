@@ -3,13 +3,11 @@ import "react-multi-carousel/lib/styles.css";
 import CarouselCarCard from "./CarouselCarCard";
 import PropTypes from "prop-types";
 
-import { AllCars } from "../constants";
-
-
+import { AllCars } from "../../constants";
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 9000, min: 24 },
     items: 2,
   },
   tablet: {
@@ -22,20 +20,19 @@ const responsive = {
   },
 };
 
-const CarouselOf1 = ({activeClassOfCar}) => {
+const CarouselOf4AndLess = ({ activeClassOfCar }) => {
+  let classOfCar = AllCars.filter((car) => car.classOfCar === activeClassOfCar);
 
-  let classOfCar = AllCars.filter((car) => car.classOfCar === activeClassOfCar)
-
-  CarouselOf1.propTypes = {
+  CarouselOf4AndLess.propTypes = {
     activeClassOfCar: PropTypes.string.isRequired,
   };
 
   return (
-    <div className= 'marginCardsSidesCenter1 relative ' >
+    <div className="marginCardsSidesCenter2 relative ">
       <Carousel
         responsive={responsive}
         partialVisible={false}
-        draggable={false}
+        draggable={true}
         className="pb-24"
         transitionDuration={100}
       >
@@ -54,4 +51,4 @@ const CarouselOf1 = ({activeClassOfCar}) => {
   );
 };
 
-export default CarouselOf1;
+export default CarouselOf4AndLess;

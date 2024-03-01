@@ -28,6 +28,15 @@ import {
   VolvoInGarge,
   VolvoOpenedTrunk,
   EX30_Side,
+  EX90_Side,
+  XC90_Side,
+  XC60_Side, 
+  XC40_Side,
+  C40_Side,
+  V90_Side,
+  V60_Side,
+  S60_Side,
+  S90_Side,
 } from "../assets/Cars";
 import { FacebookLogo, InstagramLogo, PinterstLogo, TwitterLogo, YouTubeLogo } from "../assets/logos";
 
@@ -334,7 +343,7 @@ export const AllCars = [
     model: "EX90",
     price: "399 900",
     type: "Pure Electric",
-    image: EX30_Side,
+    image: EX90_Side,
   },
   {
     key: "xc90",
@@ -342,7 +351,7 @@ export const AllCars = [
     model: "XC90",
     price: "379 900",
     type: "Plug-in hybrid",
-    image: EX30_Side,
+    image: XC90_Side,
   },
   {
     key: "xc60",
@@ -350,7 +359,7 @@ export const AllCars = [
     model: "XC60",
     price: "264 900",
     type: "Plug-in hybrid",
-    image: EX30_Side,
+    image: XC60_Side,
   },
   {
     key: "xc40recharge",
@@ -358,7 +367,7 @@ export const AllCars = [
     model: "XC40 Recharge",
     price: "249 300",
     type: "Plug-in hybrid",
-    image: EX30_Side,
+    image: XC40_Side,
   },
   {
     key: "c40recharge",
@@ -366,7 +375,7 @@ export const AllCars = [
     model: "C40 Recharge",
     price: "256 900",
     type: "Pure Electric",
-    image: EX30_Side,
+    image: C40_Side,
   },
   {
     key: "v90",
@@ -374,7 +383,7 @@ export const AllCars = [
     model: "V90",
     price: "299 900",
     type: "Plug-in hybrid",
-    image: EX30_Side,
+    image: V90_Side,
   },
   {
     key: "v60",
@@ -382,7 +391,7 @@ export const AllCars = [
     model: "V60",
     price: "244 900",
     type: "Plug-in hybrid",
-    image: EX30_Side,
+    image: V60_Side,
   },
   {
     key: "s90recharge",
@@ -390,7 +399,8 @@ export const AllCars = [
     model: "S90 Recharge",
     price: "323 900",
     type: "Plug-in hybrid",
-    image: EX30_Side,
+    image: S90_Side,
+  
   },
   {
     key: "s60recharge",
@@ -398,7 +408,7 @@ export const AllCars = [
     model: "S60 Recharge",
     price: "349 900",
     type: "Plug-in hybrid",
-    image: EX30_Side,
+    image: S60_Side,
   },
 ];
 
