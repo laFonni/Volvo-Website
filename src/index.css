@@ -11,10 +11,6 @@
   margin-right: calc(50vw - 646px);
 }
 
-.noScroll {
-  overflow-y: hidden;
-}
-
 .marginCardsSidesCenter1 {
   margin-left: calc(50vw - 152px);
   margin-right: calc(50vw - 154px);

@@ -7,8 +7,8 @@ import {
   arrowBlackLeft,
   arrowGreyLeft,
   arrowGreyRight,
-} from "../assets";
-import { AllCars } from "../constants";
+} from "../../assets";
+import { AllCars } from "../../constants";
 
 const CustomRightArrow = ({ onClick, ...rest }) => (
   <button onClick={() => onClick()} {...rest}>
@@ -32,25 +32,25 @@ CustomLeftArrow.propTypes = {
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 9000, min: 24 },
     items: 4,
   },
 };
 
-const CarouselOfAllCars = ({ activeClassOfCar }) => {
+const CarouselOfAbove4 = ({ activeClassOfCar }) => {
   let classOfCar = AllCars.filter((car) =>
     activeClassOfCar == "AllCars" ? car : car.classOfCar === activeClassOfCar
   );
 
-  CarouselOfAllCars.propTypes = {
+  CarouselOfAbove4.propTypes = {
     activeClassOfCar: PropTypes.string.isRequired,
   };
 
   return (
-    <div className="marginCardsSidesCenterOf4andAbove relative  ">
+    <div className="marginCardsSidesCenterOf4andAbove relative ">
       <Carousel
         responsive={responsive}
-        draggable={false}
+        draggable={true}
         partialVisible={false}
         gotoslide={1}
         customLeftArrow={
@@ -91,4 +91,4 @@ const CarouselOfAllCars = ({ activeClassOfCar }) => {
   );
 };
 
-export default CarouselOfAllCars;
+export default CarouselOfAbove4;

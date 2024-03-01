@@ -11,7 +11,7 @@ const RangeOfCarsCard = ({ title, description, image }) => {
           alt={image}
         />
       </div>
-      <div className="">
+      <div>
         <h2 className="flex justify-center text-3xl font-semibold tracking-wide pt-16 pb-6">
           {title}
         </h2>
